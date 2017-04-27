@@ -20,7 +20,7 @@ public class IndexServlet extends HttpServlet {
 		LocalDate vandaag = LocalDate.now();
 		DayOfWeek weekdag = vandaag.getDayOfWeek();
 		request.setAttribute("openGesloten",
-			weekdag == DayOfWeek.MONDAY || weekdag == DayOfWeek.FRIDAY ?
+			weekdag == DayOfWeek.MONDAY || weekdag == DayOfWeek.THURSDAY ?
 					"gesloten" : "open");
 		RequestDispatcher dispatcher = request.getRequestDispatcher(VIEW);
 		dispatcher.forward(request, response);
