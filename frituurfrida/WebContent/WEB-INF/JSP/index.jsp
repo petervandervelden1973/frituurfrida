@@ -5,5 +5,7 @@
 	<link rel='icon' href='images/favicon.ico'>
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
 	<link rel='stylesheet' href='styles/default.css'></head>
-	<body><h1>Vandaag zijn we ${openGesloten}</h1></body>
+	<body><h1>Vandaag zijn we ${openGesloten}</h1>
+	<img src="images/${openGesloten}.png" alt="${openGesloten}">
+	</body>
 </html>
