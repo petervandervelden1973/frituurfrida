@@ -20,14 +20,17 @@ public class IndexServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException, IOException {
+
 		LocalDate vandaag = LocalDate.now();
 		DayOfWeek weekdag = vandaag.getDayOfWeek();
 		request.setAttribute("openGesloten",
 			weekdag == DayOfWeek.MONDAY || weekdag == DayOfWeek.THURSDAY ?
 					"gesloten" : "open");
-		RequestDispatcher dispatcher = request.getRequestDispatcher(VIEW);
-		dispatcher.forward(request, response);
 		request.setAttribute("adres", new Adres("Bodemstraat", "79/3",
 				new Gemeente("Riemst", 3770)));
+		
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher(VIEW);
+		dispatcher.forward(request, response);
 	}
 }
