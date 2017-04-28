@@ -1,15 +1,15 @@
 package be.vdab.entities;
 public class Adres {
 	private String straat;
-	private String huisNr;
+	private String huisnr;
 	private Gemeente gemeente;
 	
 	public Adres() {
 	}
 
-	public Adres(String straat, String huisNr, Gemeente gemeente) {
+	public Adres(String straat, String huisnr, Gemeente gemeente) {
 		this.straat = straat;
-		this.huisNr = huisNr;
+		this.huisnr = huisnr;
 		this.gemeente = gemeente;
 	}
 
@@ -21,12 +21,12 @@ public class Adres {
 		this.straat = straat;
 	}
 
-	public String getHuisNr() {
-		return huisNr;
+	public String getHuisnr() {
+		return huisnr;
 	}
 
 	public void setHuisNr(String huisNr) {
-		this.huisNr = huisNr;
+		this.huisnr = huisNr;
 	}
 
 	public Gemeente getGemeente() {

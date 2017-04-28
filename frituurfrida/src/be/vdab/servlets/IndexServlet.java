@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import be.vdab.entities.Adres;
+import be.vdab.entities.Gemeente;
+
 @WebServlet("/index.htm")
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -24,5 +27,7 @@ public class IndexServlet extends HttpServlet {
 					"gesloten" : "open");
 		RequestDispatcher dispatcher = request.getRequestDispatcher(VIEW);
 		dispatcher.forward(request, response);
+		request.setAttribute("adres", new Adres("Bodemstraat", "79/3",
+				new Gemeente("Riemst", 3770)));
 	}
 }
