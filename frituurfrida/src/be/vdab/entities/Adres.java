@@ -1,25 +1,47 @@
 package be.vdab.entities;
-
-public class Gemeente {
-	private String naam;
-	private int postcode;
+public class Adres {
+	private String straat;
+	private String huisNr;
+	private Gemeente gemeente;
 	
-	public Gemeente() {
+	public Adres() {
 	}
-	public Gemeente(String naam, int postcode) {
-		this.naam = naam;
-		this.postcode = postcode;
+
+	public Adres(String straat, String huisNr, Gemeente gemeente) {
+		this.straat = straat;
+		this.huisNr = huisNr;
+		this.gemeente = gemeente;
 	}
-	public String getNaam() {
-		return naam;
+
+	public String getStraat() {
+		return straat;
 	}
-	public void setNaam(String naam) {
-		this.naam = naam;
+
+	public void setStraat(String straat) {
+		this.straat = straat;
 	}
-	public int getPostcode() {
-		return postcode;
+
+	public String getHuisNr() {
+		return huisNr;
 	}
-	public void setPostcode(int postcode) {
-		this.postcode = postcode;
+
+	public void setHuisNr(String huisNr) {
+		this.huisNr = huisNr;
 	}
+
+	public Gemeente getGemeente() {
+		return gemeente;
+	}
+
+	public void setGemeente(Gemeente gemeente) {
+		this.gemeente = gemeente;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
