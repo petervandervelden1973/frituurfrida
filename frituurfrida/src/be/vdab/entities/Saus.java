@@ -13,7 +13,7 @@ public class Saus {
 		this.id = id;
 		this.naam = naam;
 		// this.ingredienten.addAll(ingredienten);
-		 this.ingredienten.addAll((Collection<? extends String>) ingredienten);
+		this.ingredienten.addAll((Collection<? extends String>) ingredienten);
 	}
 
 	public long getId() {

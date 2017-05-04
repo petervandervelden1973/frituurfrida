@@ -20,9 +20,9 @@ public class SauzenServlet extends HttpServlet {
 		throws ServletException, IOException {
 		List<Saus> sauzen = Arrays.asList(
 			new Saus(3L, "cocktail", Arrays.asList("mayonaise", "ketchup", "cognac")),
-			new Saus(6L, "mayonaise", Arrays.asList("ei", "mosterd")),
+			new Saus(6L, "mayonaise", Arrays.asList("ei", "plantaardige olie", "mosterd", "azijn")),
 			new Saus(7L, "mosterd", Arrays.asList("mosterd", "azijn", "witte wijn")),
-			new Saus(12L, "tartare", Arrays.asList("mayonaise", "augurk", "tabasco")),
+			new Saus(12L, "tartare", Arrays.asList("mayonaise", "augurk", "tobasco")),
 			new Saus(44L,"vinaigrette",Arrays.asList("olijfolie","mosterd","azijn")));
 	request.setAttribute("sauzen", sauzen);
 	request.getRequestDispatcher(VIEW).forward(request, response);
