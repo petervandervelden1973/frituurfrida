@@ -11,5 +11,8 @@
 	<h2>Adres</h2>
 	${adres.straat} ${adres.huisnr}<br>
 	${adres.gemeente.postcode} ${adres.gemeente.naam}
+	<div>Contact:
+	<a href="tel:+${telefoonnummerContact.replace('/','')}">${telefoonnummerContact}
+	</a></div>
 	</body>
 </html>
