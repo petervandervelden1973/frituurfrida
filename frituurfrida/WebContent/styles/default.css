@@ -7,6 +7,16 @@ h1 {
 	color: #6e0670;
 }
 
+.meisjes {
+	background-color: #FFCCFF;
+	color: #FF0066;
+}
+
+.jongens {
+	background-color: #CCFFFF;
+	color: #3300FF;
+}
+
 label span {
 	background-color: red;
 	border-bottom-right-radius: 0.5em;
