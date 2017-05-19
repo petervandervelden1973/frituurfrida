@@ -21,7 +21,7 @@ public class SausRepository {
 	}
 
 	public List<Saus> findAll() {
-		return new ArrayList(SAUZEN.values());
+		return new ArrayList(SAUZEN.values()) ;
 	}
 
 	public List<Saus> findByIngredient(String ingredient) {
